@@ -11,7 +11,7 @@ console.log('Animals are: ', animalArray);
 //    Be sure to console.log your array of foods to the console with
 //    a message, similar to the example above.
 let favoriteFoods = ["pizza", "soda", "ice cream", "cheesecake"];
-console.log(`My favorite foods are ${favoriteFoods}.`)
+console.log("My favorite foods are:", favoriteFoods)
 
 // Array.length: A property that tells you how many items are in a given array.
 console.log('--- 2. Length of an array ---');
@@ -24,7 +24,7 @@ console.log('Number of animals:', numberOfAnimals);
 //    to assign it the number value of how many items are inside `favoriteFoods`.
 //    Don't forget to console.log `numberOfFoods` to make sure your code worked!
 let numberOfFoods = favoriteFoods.length;
-console.log(`Number of foods: ${numberOfFoods}`);
+console.log("Number of foods:", numberOfFoods);
 
 // Accessing array items
 console.log('--- 3. Accessing items in an array ---');
@@ -38,9 +38,9 @@ console.log('First animal is', firstAnimal);
 //      Be sure to console.log this new variable to make sure your code
 //      worked as expected.
 let secondAnimal = animalArray[1];
-console.log(`Second animal: ${secondAnimal}`);
+console.log('Second animal:', secondAnimal);
 
-// 3.b. TODO: Create a variable `lastAnimal` and assign it the value of
+// 3.b. TODO: Create a variable 'lastAnimal' and assign it the value of
 //      the "last" item in `animalArray`, using its array index.
 //      You'll need to console.log `animalArray` and `lastAnimal` to make
 //      sure that your code does what you want. (Never trust your code until
@@ -48,15 +48,15 @@ console.log(`Second animal: ${secondAnimal}`);
 
 // this could be also be written as : let lastAnimal = animalArray.slice(-1);
 let lastAnimal = animalArray[3]
-console.log(`Animal Array: ${animalArray}`);
-console.log(`Last animal: ${lastAnimal}`);
+console.log('Animal Array:',animalArray);
+console.log('Last animal:', lastAnimal);
 
 // 3.c. (STRETCH) TODO: Refactor 3.b to use the `animalArray` variable's .length 
 //       property, rather than the exact (hardcoded) index number of the last item.
 lastAnimal = animalArray[animalArray.length-1]
 console.log("* Refactoring lastAnimal")
-console.log(`Animal Array: ${animalArray}`);
-console.log(`Last animal: ${lastAnimal}`);
+console.log('Animal Array:', animalArray);
+console.log('Last animal:',lastAnimal);
 
 
 // Adding & Removing Array Items
@@ -67,14 +67,14 @@ let animalToPush = 'penguin';
 animalArray.push(animalToPush);
 console.log('Added an animal to end,', animalArray);
 
-// 4.a. TODO: Create a variable `dessert` and assign it a string value of
+// 4.a. TODO: Create a variable 'dessert' and assign it a string value of
 //      a dessert that you love.
 //      Similar to above, add the `dessert` to the end of your `favoriteFoods`
 //      array. (How can you be 100% certain this worked? 🤔)
 let dessert = "double chocolate chunk brownie cookie";
 favoriteFoods.push(dessert);
-console.log(`Dessert: ${dessert}`);
-console.log(`Added dessert to faves: ${favoriteFoods}`)
+console.log("Dessert:", dessert);
+console.log("Added dessert to faves:", favoriteFoods);
 
 
 // Example: Add to the beginning of an array using the Array.unshift method.
@@ -87,7 +87,7 @@ console.log(`Added an animal to beginning: ${animalArray}`);
 //      Add the `entree` to the beginning of your `favoriteFoods` array.
 let entree = "Chicken Parmesan";
 favoriteFoods.unshift(entree);
-console.log(`added entree: ${favoriteFoods}`)
+console.log("added entree:",favoriteFoods);
 
 
 // Example: Remove the last animal by using the Array.pop method.
@@ -113,8 +113,8 @@ console.log('The animals are now', animalArray);
 
 // My code
 let lastColor = colors.pop();
-console.log(`Removed last color: ${lastColor}`);
-console.log(`The correct colors are: ${colors}`);
+console.log("Removed last color:", lastColor);
+console.log("The correct colors are:", colors);
 
 // 4.d. TODO: Remove the first value from the `colors` array and store it
 //      inside a new variable called `firstColor`.
@@ -122,7 +122,7 @@ console.log(`The correct colors are: ${colors}`);
 
 let firstColor = colors.shift();
 console.log(`The first color is: ${firstColor}`);
-console.log(`The current available colors are: ${colors}`);
+console.log("The current available colors are:", colors);
 
 
 
@@ -135,12 +135,12 @@ let gems = ['Topaz', 'Citrine', 'Diamond', 'Emerald', 'Iolite', 'Tanzanite'];
 
 let replacedGem = "Tourmaline";
 gems[1] = replacedGem;
-console.log(`Replaced Citrine with Tourmaline: ${gems}`);
+console.log("Replaced Citrine with Tourmaline:", gems);
 
 // 5.b (STRETCH) TODO: Sort your gems array in reverse alphabetical order.
 //     Please console.log the sorted array.
 let sortedGems = gems.sort().reverse();
-console.log(`Sorted Gems: ${sortedGems}`);
+console.log("Sorted Gems:", sortedGems);
 
 
 // 5.c (STRETCH) TODO: Create a variable `gemString` and assign it a string value
@@ -151,7 +151,7 @@ console.log(`Sorted Gems: ${sortedGems}`);
 //     🔥 You'll need to research the .join Array method. 🔥
 //     Don't forget to console.log `gemString`...
 let gemString = gems.join(' and ');
-console.log(`List of available gems: ${gemString}`);
+console.log("List of available gems:", gemString);
 
 
 // 5.d (STRETCH) TODO: Make a new array `colorfulGems` that combines 
@@ -160,7 +160,7 @@ console.log(`List of available gems: ${gemString}`);
 //       ['Tourmaline', 'Topaz', 'Tanzanite', 'Iolite', 'Emerald', 'Diamond', 'yellow', 'green']
 //     Now, console.log the new array.
 let colorfulGems = gems.concat(colors);
-console.log(`Colorful Gems: ${colorfulGems}`);
+console.log("Colorful Gems:", colorfulGems);
 
 
 
